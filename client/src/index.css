@@ -1,0 +1,121 @@
+html, body {
+  margin: 0;
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  color: rgba(13, 33, 88, 0.904) !important;
+  background-image: url('sky.jpg');
+  background-color: rgba(226, 231, 245, 0.541) !important;
+  box-sizing: border-box;
+}
+
+#root, .container-fluid, .guestContent {
+  height: 100% !important;
+}
+
+.content {
+  margin-left: 300px;
+  transition: margin-left 0.5s ease-in-out;
+}
+
+.box {
+  padding: 0.25rem 0.35rem;
+  border-radius: .45rem;
+  background-color: rgba(255, 255, 255, 0.651);
+}
+
+.--expand {
+  margin-left: 50px !important;
+}
+
+a {
+  color: black !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.dive {
+  animation-name: showItself;
+  animation-duration: 1s;
+}
+
+.diveBox {
+  cursor: pointer;
+  border-radius: .25rem;
+  border: 1px solid transparent;
+  color: rgba(19, 128, 201, 0.63);
+  background-color: rgba(255, 255, 255, 0.342);
+  animation: glow 1.2s infinite alternate;  
+   -webkit-transition: border 2s linear, box-shadow 2.0s linear;
+     -moz-transition: border 2s linear, box-shadow 2.0s linear;
+          transition: border 2s linear, box-shadow 2.0s linear;
+  padding: 1rem 2rem !important;
+  font-size: 3rem !important;
+  transition: color 0.7s ease-in-out;
+  box-shadow: 0px;
+}
+
+.diveBox:hover {
+  color: rgb(255, 255, 255);
+}
+
+@keyframes glow {
+  to {
+    border-color: white;
+    box-shadow: 0 0 8px white;
+  }
+}
+
+.loading-text {
+  font-size: 30px;
+  color: rgba(47, 88, 202, 0.644);
+}
+
+@keyframes showItself {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nextM, .prevM {
+  width: fit-content !important;
+  padding: 0.25rem 1.25rem;
+  box-shadow: 0 0 5px 1px rgba(30, 58, 151, 0.445);
+}
+
+.moving-content {
+  opacity: 1;
+  margin-top: 2rem;
+  transition: opacity 1s ease-out;
+  height: min-content;
+  animation-name: moveUp;
+  animation-duration: 1.10s;
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    margin-top: 15%;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 2rem;
+  }
+}
+
+button span {
+  padding: 0.25rem 0.35rem;
+  font-size: 1.8vw;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+}

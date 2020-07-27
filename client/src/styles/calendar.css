@@ -1,0 +1,61 @@
+.calendar {
+    margin-top: 5rem;
+    overflow: hidden;
+    animation: showUp 1s;
+}
+
+.slideLeft {
+    animation: slideL 0.8s;
+}
+
+.slideRight {
+    animation: slideR 0.8s;
+}
+
+@keyframes slideR {
+    0%{
+        opacity: 1;
+        margin-left: 0%;
+    }
+    33%{
+        opacity: 0;
+        margin-left: 150%;
+    }
+    66%{
+        opacity: 0;
+        margin-left: -150%;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+@keyframes slideL {
+    0%{
+        opacity: 1;
+        margin-left: 0%;
+    }
+    33%{
+        opacity: 0;
+        margin-left: -150%;
+    }
+    50%{
+        opacity: 0;
+        margin-left: 150%;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+@keyframes showUp {
+    0%{
+        margin-top: 100%;
+    }
+    100%{
+        margin-top: 5rem;
+    }
+    
+}

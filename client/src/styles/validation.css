@@ -1,0 +1,18 @@
+.show-error {
+    border: 1px solid rgb(14, 13, 13);
+    border-radius: 0.25rem;
+    margin-top: 5px;
+    padding: 0.25rem 1rem;
+    background-color: rgba(41, 38, 38, 0.5);
+    color: rgba(17, 16, 16, 0.76);
+    animation: showError 1s linear;
+}
+
+@keyframes showError {
+    0%{ 
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}

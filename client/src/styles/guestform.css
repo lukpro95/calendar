@@ -1,0 +1,72 @@
+input, select {
+  font-size: 1.7vw !important;
+  padding: 0.4rem 1.7rem !important;
+  background-color: rgb(255, 255, 255, 0.677);
+  border: solid 0px rgba(0, 0, 0, 0.342);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.137);
+  border-radius: 0.25rem;
+  color: teal;
+}
+
+input:hover, input:focus, select:hover, select:focus {
+  outline: none;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.322);
+}
+
+button {
+  border: none;
+  border-radius: 0.25rem !important;
+  background-color: rgb(53,80,168, 70%);
+  font-size: 1.7vw !important;
+  color: white;
+  width: 100% !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  outline: none !important;
+  white-space: nowrap;
+}
+  
+button:focus, button:hover, button:focus {
+  box-shadow: 0 0 8px 2px rgb(53,80,168, 70%);
+  transition: all 0.5s ease-in-out;
+}
+
+input::placeholder {
+  color: rgb(163, 162, 162);
+}
+
+form .--hide {
+  display: none;
+}
+
+.showAlert {
+  animation-name: showItself;
+  animation-duration: 1s;
+  opacity: 0.85;
+}
+
+@keyframes showItself {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.85;
+  }
+}
+
+.circleElement {
+  border: 1px solid;
+  border-color: rgba(47, 88, 202, 0.644);
+  box-shadow: 0 0 2px 1px rgba(37, 75, 180, 0.644);
+  border-radius: 50%;
+  max-width: 22px;
+  min-width: 22px;
+  min-height: 22px;
+  max-height: 22px;
+  background-color: rgb(255, 255, 255, 70%);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.circleElement-active {
+  background-color: rgba(37, 75, 180, 0.644) !important;
+}

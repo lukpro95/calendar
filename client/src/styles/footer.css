@@ -1,0 +1,9 @@
+.footer {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0px;
+    padding: .25rem;
+    font-size: 0.9rem;
+    height: min-content;
+    width: 100vw !important;
+}
